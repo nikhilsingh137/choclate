@@ -1,0 +1,231 @@
+.Header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9;
+  }
+  .Navbar {
+    position: fixed;
+    background: rgb(255 255 255);
+    left: 0;
+    width: 0px;
+    height: 100%;
+    z-index: 9;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    transition: 0.2s;
+  }
+  .head {
+    background: #463126;
+    padding: 18px;
+    text-align: center;
+    border-bottom: solid 1px #fff;
+    a {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+  .divide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    transition: 0.6s;
+    position: relative;
+    &.change {
+      background: #463126;
+    }
+    &:hover {
+      background: #fff;
+    }
+    &:hover .navbar ul li a {
+      color: #000;
+      transition: 0.6s;
+    }
+    &:hover .icon span {
+      color: #000;
+      transition: 0.6s;
+    }
+    &:hover .icon h2 {
+      color: #000;
+      transition: 0.6s;
+    }
+    &:hover .icon h3 a {
+      color: #000;
+      transition: 0.6s;
+    }
+    &:hover .button {
+      color: #000;
+    }
+    .logo {
+      display: block;
+      transition: 0.6s;
+      img {
+        min-width: 80px;
+        max-width: 80px;
+        object-fit: cover;
+      }
+    }
+    .button {
+      font-size: 20px;
+      color: #fff;
+      height: 35px;
+      display: none;
+    }
+    .navbar {
+      display: block;
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+        li {
+          padding: 20px 10px;
+          border: none;
+          &:hover .drop {
+            height: 390px;
+          }
+          a {
+            text-decoration: none;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 500;
+          }
+          .drop {
+            position: fixed;
+            top: 140px;
+            background: #fff;
+            left: 0;
+            display: block;
+            width: 100%;
+            transition: 0.6s;
+            height: 0px;
+            overflow: hidden;
+            .frame {
+              display: flex;
+              justify-content: space-between;
+              padding: 30px 40px;
+              a {
+                text-decoration: none;
+                width: 19%;
+                display: block;
+                span {
+                  display: block;
+                  width: 100%;
+                  background: #ddd;
+                  img {
+                    width: 100%;
+                  }
+                }
+                strong {
+                  font-size: 18px;
+                  text-align: center;
+                  display: block;
+                  color: #000;
+                  font-family: Arial, Helvetica, sans-serif;
+                  padding: 10px 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .icon {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      span {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      h2 {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+      }
+      h3 {
+        margin: 0;
+        padding: 0;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 17px;
+          font-weight: 500;
+        }
+      }
+    }
+    .borderLine {
+      position: absolute;
+      bottom: 0;
+      background: #ff0000;
+      height: 4px;
+      width: 0%;
+      left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .Header {
+    .divide {
+      padding: 10px 10px;
+      .button {
+        display: block;
+      }
+      .navbar {
+        display: none;
+      }
+      .logo {
+        img {
+          max-width: 55px;
+          min-width: 55px;
+        }
+      }
+      .icon {
+        gap: 15px;
+        span {
+          display: none;
+        }
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .Header {
+    .divide {
+      padding: 10px 20px;
+      .navbar {
+        ul {
+          gap: 15px;
+        }
+      }
+      .icon {
+        gap: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.Mainbox {
+  display: block;
+  padding-bottom: 70px;
+  .wrapper {
+    width: 1230px;
+    margin: auto;
+    .content {
+      display: block;
+      h2 {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 35px;
+        margin: 0;
+        padding: 5px 0px;
+        color: #333;
+        text-align: center;
+        font-weight: 700;
+      }
+      .detail {
+        display: flex;
+        justify-content: space-between;
+        a {
+          width: 31%;
+          text-decoration: none;
+          margin-top: 70px;
+          span {
+            display: block;
+            width: 100%;
+            background: #ddd;
+            img {
+              width: 100%;
+            }
+          }
+          h2 {
+            font-size: 16px;
+            margin: 0;
+            padding: 10px 0px;
+            text-align: center;
+            font-weight: 600;
+            color: #666;
+          }
+          h3 {
+            font-size: 23px;
+            margin: 0;
+            padding: 0px 0px;
+            text-align: center;
+            font-weight: 600;
+            color: #222;
+          }
+          h4 {
+            font-size: 18px;
+            margin: 0;
+            padding: 10px 0px;
+            text-align: center;
+            font-weight: 600;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .Mainbox {
+    .wrapper {
+      width: 100%;
+      .content {
+        padding: 0px 10px;
+        .detail {
+          flex-wrap: wrap;
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .Mainbox {
+    .wrapper {
+      width: 100%;
+      .content {
+        padding: 0px 10px;
+        .detail {
+          flex-wrap: wrap;
+          a {
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) and (min-width: 993px) {
+  .Mainbox {
+    .wrapper {
+      width: 100%;
+      .content {
+        padding: 0px 10px;
+        .detail {
+          flex-wrap: wrap;
+          a {
+            width: 31%;
+          }
+        }
+      }
+    }
+  }
+}

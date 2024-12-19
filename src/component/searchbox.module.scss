@@ -1,0 +1,161 @@
+.SearchBox {
+  display: block;
+  position: absolute;
+  top: 82px;
+  left: 0;
+  width: 100%;
+  .overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 237px;
+  }
+  .mainbox {
+    background: #fff;
+    width: 100%;
+    padding: 20px 0px;
+    position: relative;
+    max-height: calc(100vh - 82px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    scrollbar-width: none;
+    .box {
+      width: 1230px;
+      margin: auto;
+      display: block;
+      .formBox {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        label {
+          display: block;
+          i {
+            font-size: 20px;
+            color: #666;
+          }
+        }
+        input {
+          border: none;
+          outline: none;
+          font-size: 20px;
+          color: #666;
+          width: 90%;
+        }
+        h2 {
+          margin: 0;
+          padding: 0;
+          font-size: 28px;
+          color: #666;
+          font-weight: 500;
+          text-align: end;
+          cursor: pointer;
+        }
+      }
+    }
+    .drop {
+      .wrapper {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: flex;
+        width: 1230px;
+        margin: auto;
+        padding-bottom: 40px;
+        a {
+          width: 30%;
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          margin-top: 60px;
+          span {
+            width: 100%;
+            display: block;
+            height: 200px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          h2 {
+            border: none;
+            font-size: 15px;
+            color: #666;
+            margin: 0;
+            padding: 0;
+          }
+          h3 {
+            border: none;
+            font-size: 18px;
+            color: #000;
+            margin: 0;
+            padding: 10px 0px;
+          }
+          h4 {
+            border: none;
+            font-size: 15px;
+            color: #666;
+            margin: 0;
+            padding: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .SearchBox {
+    padding: 0px;
+    .mainbox {
+      padding: 0;
+      .box {
+        width: 100%;
+        .formBox {
+          padding: 10px 20px;
+        }
+      }
+      .drop {
+        padding: 0px 10px;
+        .wrapper {
+          width: 100%;
+        }
+      }
+    }
+    .overlay {
+      top: 0;
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 769px) {
+  .SearchBox {
+    padding: 0px;
+    .mainbox {
+      padding: 0;
+      .box {
+        width: 100%;
+        .formBox {
+          padding: 10px 20px;
+        }
+      }
+      .drop {
+        padding: 0px 10px;
+        .wrapper {
+          width: 100%;
+        }
+      }
+    }
+    .overlay {
+      top: 0;
+      height: 100%;
+    }
+  }
+}

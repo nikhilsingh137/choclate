@@ -1,0 +1,140 @@
+.Mainbox {
+  display: block;
+  padding-bottom: 50px;
+  .content {
+    display: block;
+    .back {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 50px;
+      align-items: center;
+      width: 100%;
+      background-image: url("https://simplychocolate.dk/cdn/shop/collections/Simply_Collection_Header4_D_2439debd-1062-4c5b-b93e-63152b457863.jpg?v=1706014904&width=1400");
+      height: 50vh;
+      background-repeat: no-repeat;
+      background-position: 100%;
+      background-size: cover;
+      h2 {
+        color: #fff;
+        font-size: 30px;
+      }
+    }
+    .detail {
+      margin-top: 48px;
+      display: block;
+      width: 100%;
+      h2 {
+        color: #666;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 20px 0px;
+        margin: 0;
+        border-bottom: solid 1px #ddd;
+      }
+    }
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    a {
+      display: block;
+      width: 31%;
+      background: rgb(221 221 221);
+      margin-top: 40px;
+      text-decoration: none;
+      border-radius: 5px;
+      span {
+        display: block;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .text {
+        display: block;
+        text-align: center;
+        padding: 15px 0px;
+        padding-bottom: 20px;
+        h2 {
+          border: none;
+          font-size: 15px;
+          color: #666;
+          margin: 0;
+          padding: 0;
+        }
+        h3 {
+          border: none;
+          font-size: 18px;
+          color: #000;
+          margin: 0;
+          padding: 10px 0px;
+        }
+        h4 {
+          border: none;
+          font-size: 15px;
+          color: #666;
+          margin: 0;
+          padding: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .Mainbox {
+    .content {
+      .back {
+        h2 {
+          padding: 0px 20px;
+          text-align: center;
+        }
+      }
+    }
+    .product {
+      padding: 0px 10px;
+      a {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .Mainbox {
+    .content {
+      h2 {
+        padding: 0px 20px;
+        text-align: center;
+      }
+    }
+    .product {
+      padding: 0px 10px;
+      a {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 993px) {
+  .Mainbox {
+    .content {
+      h2 {
+        padding: 0px 20px;
+        text-align: center;
+      }
+    }
+    .product {
+      padding: 0px 10px;
+      a {
+        width: 31%;
+      }
+    }
+  }
+}
